@@ -1,0 +1,86 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+9
+(
+    overset1
+    {
+        type            overset;
+        inGroups        1(overset);
+        nFaces          168;
+        startFace       24982;
+    }
+    overset2
+    {
+        type            overset;
+        inGroups        1(overset);
+        nFaces          168;
+        startFace       25150;
+    }
+    walls
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          280;
+        startFace       25318;
+    }
+    inlet
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          70;
+        startFace       25598;
+    }
+    outlet
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          70;
+        startFace       25668;
+    }
+    hole
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       25738;
+    }
+    frontAndBack
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          19600;
+        startFace       25738;
+    }
+    frontAndBack1
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          2880;
+        startFace       45338;
+    }
+    frontAndBack2
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          2880;
+        startFace       48218;
+    }
+)
+
+// ************************************************************************* //

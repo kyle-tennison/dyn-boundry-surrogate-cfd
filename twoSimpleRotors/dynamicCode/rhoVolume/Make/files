@@ -1,0 +1,6 @@
+/* dynamicCode:
+ * SHA1 = 019b51ea21bef9595ebf8486f379142298755c47
+ */
+functionObjectTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/librhoVolume_019b51ea21bef9595ebf8486f379142298755c47
